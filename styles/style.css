@@ -1,7 +1,17 @@
+:root {
+    --text: #EAE9FC;
+    --background: #160F29;
+    --primary: #246A73;
+    --secondary: #020024;
+    --accent: #368F8B;
+}
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 /* width */
@@ -34,6 +44,7 @@ body {
 
 .horizontalAlign:nth-child(odd) {
     flex-direction: row-reverse;
+    background-color: var(--secondary);
 }
 
 #homeImage {
@@ -45,12 +56,12 @@ body {
 #homeIcon {
     margin-top: 53vh;
     fill: transparent;
-    stroke: #ffffff;
+    stroke: var(--accent);
     stroke-width: 1px;
 }
 
 #homeIcon:hover {
-    fill: #ffffff;
+    fill: var(--accent);
     stroke-width: 4.1px;
 }
 
@@ -58,25 +69,28 @@ body {
     position: absolute;
     top: 30%;
     width: 100%;
-    color: #ffffff;
     z-index: 1000;
     text-align: center;
 }
 
 footer {
     background-color: #333;
-    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text);
 }
 
 ul {
     list-style-type: none;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
