@@ -42,7 +42,19 @@ body {
     filter: brightness(30%);
 }
 
-#homeText {
+#homeIcon {
+    margin-top: 53vh;
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 1px;
+}
+
+#homeIcon:hover {
+    fill: #ffffff;
+    stroke-width: 4.1px;
+}
+
+#homeBody {
     position: absolute;
     top: 30%;
     width: 100%;
