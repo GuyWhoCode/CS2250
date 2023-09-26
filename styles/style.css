@@ -107,6 +107,15 @@ body {
     margin-top: 10%;
 }
 
+#siteMap {
+    display: flex;
+    justify-content: space-around;
+}
+
+#siteMap a:hover {
+    color: #fff;
+}
+
 footer {
     background-color: var(--secondary);
     padding: 20px;
@@ -156,6 +165,18 @@ h1 {
 
     .buttonSection {
         margin-bottom: 5%;
+    }
+
+    #homeImage {
+        display: none;
+    }
+
+    header {
+        background-image: url("../images/stardew.gif");
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 62% center;
     }
 }
 
