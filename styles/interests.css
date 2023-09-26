@@ -37,4 +37,10 @@
     #layout {
         flex-direction: column;
     }
+
+    .content {
+        width: 100vw;
+        margin: 0;
+        padding-top: 8%;
+    }
 }
