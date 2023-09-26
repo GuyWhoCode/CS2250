@@ -149,6 +149,7 @@ h1 {
     .horizontalAlign:nth-child(odd) {
         background-color: var(--secondary);
         flex-direction: column;
+        padding-right: 1%;
     }
 
     .image {
