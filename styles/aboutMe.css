@@ -1,8 +1,64 @@
 :root {
     --text: #eae9fc;
-    --background: #160f29;
-    --primary: #246a73;
-    --secondary: #020024;
-    --accent: #368f8b;
+    --background: #0f0f15;
+    --primary: #50a2ad;
+    --secondary: #123148;
+    --accent: #ddbea8;
 }
 
+#layout {
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    column-gap: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 8%;
+}
+
+.content {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#emphasis {
+    text-align: center;
+    background-color: var(--primary);
+    color: #000;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10%;
+    font-size: 3em;
+    border-radius: 12px;
+}
+
+.image {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+details {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #emphasis {
+        width: fit-content;
+        font-size: 2em;
+    }
+
+    #layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        margin-top: 5%;
+    }
+
+    .content:nth-child(odd) {
+        background-color: var(--secondary);
+    }
+}

@@ -4,91 +4,72 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>About Me!</title>
+        <link rel="stylesheet" href="styles/style.css" />
         <link rel="stylesheet" href="styles/aboutMe.css" />
     </head>
     <body>
-        <header>
-            <h1>Who am I?</h1>
-        </header>
+        <h1>Who am I?</h1>
 
-        <table>
-            <tr>
-                <td>
-                    <div id="culture">
-                        <img src="images/food.jpg" alt="Nasi bungkus" />
-                        <h4>
-                            A picture of my favorite kind of curry: Nasi bungkus
-                        </h4>
-                        <p>
-                            I like rice. Fried rice, chicken curry with rice
-                            (like this picture above), chicken katsu with rice,
-                            rice with Korean Fried Chicken, Soup with rice,
-                            Spanish rice, Chicken-fried rice.
-                            <i>Have I made you hungry yet?</i>
-                        </p>
-                    </div>
-                </td>
-                <td>
-                    <div id="theRealCulture">
-                        <img src="images/chaos.png" alt="Chaos." />
-                        <details>
-                            <summary>
-                                A picture of my chaotic VS Code Setup (Click me
-                                for more info!)
-                            </summary>
-                            <p>
-                                This screenshot comes from the source code of
-                                <a
-                                    href="https://broncodirect.me/"
-                                    target="_blank"
-                                    >BroncoDirectMe</a
-                                >, an extension I helped create for CPP
-                                students. Check it out!
-                            </p>
-                        </details>
+        <h2 id="emphasis">
+            I will die on the hill that VS Code is the best code editor on the
+            planet.
+        </h2>
 
-                        <h2>
-                            I will die on the hill that VS Code is the best code
-                            editor on the planet.
-                        </h2>
-                        <p>
-                            I have spent
-                            <b>wayyyyy</b> too much time both customizing VS
-                            Code to my liking and configuring it to work with
-                            the language that I need for a project.
-                        </p>
-                        <p>
-                            VS Code itself recommending to install Visual
-                            Studios for C# support? Nah, just spend 5 hours
-                            figuring out how to bootstrap C# autocompletion on
-                            VSCode. Nothing can beat the insane amount of
-                            extensions that truly add life to your code editor.
-                        </p>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <section id="layout">
+            <div id="culture" class="content">
+                <img src="images/food.jpg" alt="Nasi bungkus" class="image" />
+                <h4>A picture of my favorite kind of curry: Nasi bungkus</h4>
+                <p>
+                    I like rice. Fried rice, chicken curry with rice (like this
+                    picture above), chicken katsu with rice, rice with Korean
+                    Fried Chicken, Soup with rice, Spanish rice, Chicken-fried
+                    rice.
+                    <i>Have I made you hungry yet?</i>
+                </p>
+            </div>
+            <div id="theRealCulture" class="content">
+                <img src="images/chaos.png" alt="Chaos." class="image" />
+                <details>
+                    <summary>
+                        A picture of my chaotic VS Code Setup (Click me for more
+                        info!)
+                    </summary>
+                    <p>
+                        This screenshot comes from the source code of
+                        <a href="https://broncodirect.me/" target="_blank"
+                            >BroncoDirectMe</a
+                        >, an extension I helped create for CPP students. Check
+                        it out!
+                    </p>
+                </details>
 
-        <form action="index.html">
-            <button>Return Home</button>
-        </form>
+                <p>
+                    I have spent
+                    <b>wayyyyy</b> too much time both customizing VS Code to my
+                    liking and configuring it to work with the language that I
+                    need for a project.
+                </p>
+                <p>
+                    VS Code itself recommending to install Visual Studios for C#
+                    support? Nah, just spend 5 hours figuring out how to
+                    bootstrap C# autocompletion on VSCode. Nothing can beat the
+                    insane amount of extensions that truly add life to your code
+                    editor.
+                </p>
+            </div>
+        </section>
+
         <footer>
             <!-- Created by Jason Agus -->
             <h3>Site Map</h3>
 
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="aboutMe.html">About Me</a>
-                </li>
-                <li>
-                    <a href="interests.html">Interests</a>
-                </li>
-            </ul>
+            <section id="siteMap">
+                <a href="index.html">Home</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="interests.html">Interests</a>
+            </section>
 
-            <p>This website was created for CS2250 as part of HW1.</p>
+            <p>This website was created for CS2250 as part of HW2.</p>
         </footer>
     </body>
 </html>
