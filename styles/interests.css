@@ -1,2 +1,40 @@
+:root {
+    --text: #eae9fc;
+    --background: #0f0f15;
+    --primary: #50a2ad;
+    --secondary: #123148;
+    --accent: #ddbea8;
+}
 
+#spotlightInterest {
+    display: block;
+    max-inline-size: 150%;
+    block-size: auto;
+    width: 100%;
+    height: 100%;
+}
 
+#layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 50vw;
+    margin-top: 5%;
+}
+
+.content:nth-child(odd) {
+    background-color: var(--secondary);
+}
+
+.image {
+    max-inline-size: 100%;
+    block-size: auto;
+
+}
+@media screen and (max-width: 768px) {
+    #layout {
+        flex-direction: column;
+    }
+}
