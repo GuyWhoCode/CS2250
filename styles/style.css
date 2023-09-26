@@ -47,6 +47,7 @@ body {
 .horizontalAlign:nth-child(odd) {
     flex-direction: row-reverse;
     background-color: var(--secondary);
+    padding-right: 1%;
 }
 
 #homeImage {
@@ -149,7 +150,6 @@ h1 {
     .horizontalAlign:nth-child(odd) {
         background-color: var(--secondary);
         flex-direction: column;
-        padding-right: 1%;
     }
 
     .image {
