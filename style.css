@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#calculator {
+    background-color: grey;
+    height: 65vh;
+    width: 35vw;
+    margin: 5% auto;
+    border-radius: 12px;
+}
+
+#calculatorHead {
+    height: 10vh;
+    background-color: lightgray;
+    margin: 5%;
+    text-align: end;
+    font-size: 1.5em;
+}
+
+#mathCalculation {
+    padding: 4vh 0;
+}
+
+.calcButton {
+    background-color: lightgray;
+    border: none;
+    border-radius: 12px;
+    padding: 5%;
+    height: 9vh;
+    font-size: 2em;
+    margin: 5% 10%;
+    cursor: pointer;
+}
+
+.calcButton:hover {
+    background-color: #979696;
+}
+
+.operator {
+    background-color: #2e2d2d;
+    color: white;
+    font-size: 3em;
+}
+
+.calcRow {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+#clearBtn {
+    background-color: #ff5353;
+    color: white;
+}
+
+#clearBtn:hover {
+    background-color: #ff0000;
+}
