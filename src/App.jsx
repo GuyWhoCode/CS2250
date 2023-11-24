@@ -1,21 +1,20 @@
-export default function Board() {
+import Game from "./Game";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./Navbar";
+import Home from "./Home";
+import Word from "./Word";
+
+export default function App() {
     return (
-        <>
-            <div className="board-row">
-                <button className="square">1</button>
-                <button className="square">2</button>
-                <button className="square">3</button>
-            </div>
-            <div className="board-row">
-                <button className="square">4</button>
-                <button className="square">5</button>
-                <button className="square">6</button>
-            </div>
-            <div className="board-row">
-                <button className="square">7</button>
-                <button className="square">8</button>
-                <button className="square">9</button>
-            </div>
-        </>
+        <main>
+            <HashRouter basename="/">
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/game" element={<Game />} />
+                    <Route path="/words" element={<Word />} />
+                </Routes>
+            </HashRouter>
+        </main>
     );
 }
