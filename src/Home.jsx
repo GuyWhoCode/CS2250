@@ -1,9 +1,10 @@
 function Home() {
     return (
-        <div>
+        <main>
             <h1>Home</h1>
-            <p>Home page content</p>
-        </div>
+            <h2>Play a simple Game!</h2>
+            <p>We offer a simple <a href="/game">Tic-tac-toe</a>!</p>
+        </main>
     );
 }
 

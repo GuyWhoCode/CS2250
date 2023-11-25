@@ -2,7 +2,7 @@ import Game from "./Game";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./Home";
-import Word from "./Word";
+import Activity from "./Activity";
 
 export default function App() {
     return (
@@ -12,7 +12,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/game" element={<Game />} />
-                    <Route path="/words" element={<Word />} />
+                    <Route path="/activity" element={<Activity />} />
                 </Routes>
             </BrowserRouter>
         </main>
