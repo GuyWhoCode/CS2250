@@ -29,7 +29,7 @@ function Home() {
                     description={
                         <p>
                             Bored? Come check out some potential activities to
-                            do! <a href="/activities">Activities</a>
+                            do! <a href="/activity">Activities</a>
                         </p>
                     }
                     imageLink="https://img.freepik.com/premium-vector/bored-panda-cute-kawaii-hand-drawn-doodle-bored-lazy-panda_42174-190.jpg?w=360"
