@@ -15,7 +15,7 @@ function Activity() {
         event.preventDefault();
         const amount = event.target.elements.amount.value;
         const response = await fetch(
-            `http://www.boredapi.com/api/activity?participants=${amount}`
+            `https://www.boredapi.com/api/activity?participants=${amount}`
         );
         const data = await response.json();
         setActivity(data);

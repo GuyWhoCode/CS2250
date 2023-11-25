@@ -1,0 +1,16 @@
+#previewMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+img {
+    height: 50vh;
+    border-radius: 50%;
+}
+.preview {
+    text-align: center;
+}
+body {
+    background-color: #fcfef6;
+}
